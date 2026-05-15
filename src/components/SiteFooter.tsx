@@ -7,9 +7,14 @@ const navGroups = [
     title: "Navigate",
     links: [
       { href: "/", label: "Home" },
+      { href: "/about", label: "About" },
       { href: "/experience", label: "Experience" },
       { href: "/exhibition", label: "Exhibition" },
+      { href: "/events", label: "Events" },
+      { href: "/venue", label: "Venue" },
       { href: "/gallery", label: "Gallery" },
+      { href: "/contact", label: "Contact" },
+      { href: "/register", label: "Register" },
     ],
   },
 ] as const;
