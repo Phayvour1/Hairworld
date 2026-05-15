@@ -29,6 +29,7 @@ export default function HomePage() {
           src={heroPoster}
           alt="World Hair Expo Hero"
           fill
+          sizes="100vw"
           priority
           className="object-cover"
         />
@@ -105,6 +106,7 @@ export default function HomePage() {
                 src={editorial1}
                 alt="Editorial portrait"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover animate-clip"
               />
             </div>
@@ -173,6 +175,7 @@ export default function HomePage() {
                   src={src}
                   alt={`Past edition ${i + 1}`}
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover hover:scale-105 transition-transform duration-[1200ms] ease-out"
                 />
               </div>

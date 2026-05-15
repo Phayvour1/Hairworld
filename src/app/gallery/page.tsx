@@ -30,22 +30,22 @@ export default function GalleryPage() {
       <section className="py-24 md:py-32 px-6 lg:px-12 max-w-[1600px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
           <div className="md:col-span-8 relative aspect-video overflow-hidden group">
-            <Image src={gallery1} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={gallery1} alt="" fill sizes="(max-width: 768px) 100vw, 66vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
           <div className="md:col-span-4 relative aspect-[4/5] overflow-hidden group">
-            <Image src={gallery2} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={gallery2} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
           <div className="md:col-span-4 relative aspect-square overflow-hidden group">
-            <Image src={editorial1} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={editorial1} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
           <div className="md:col-span-8 relative aspect-video overflow-hidden group">
-            <Image src={gallery3} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={gallery3} alt="" fill sizes="(max-width: 768px) 100vw, 66vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
           <div className="md:col-span-6 relative aspect-video overflow-hidden group">
-            <Image src={editorial2} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={editorial2} alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
           <div className="md:col-span-6 relative aspect-video overflow-hidden group">
-            <Image src={editorial3} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
+            <Image src={editorial3} alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-[1.5s]" />
           </div>
         </div>
       </section>

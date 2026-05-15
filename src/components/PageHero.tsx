@@ -16,6 +16,7 @@ export function PageHero({ eyebrow, title, subtitle, image }: PageHeroProps) {
             src={image}
             alt=""
             fill
+            sizes="100vw"
             className="object-cover opacity-30"
             priority
           />

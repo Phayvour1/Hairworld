@@ -71,6 +71,7 @@ export default function ExperiencePage() {
                     src={p.img} 
                     alt={p.t} 
                     fill
+                    sizes="(max-width: 768px) 100vw, 70vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-[1.5s] ease-out-expo" 
                   />
                 </div>
