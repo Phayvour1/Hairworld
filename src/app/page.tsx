@@ -54,10 +54,10 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/register"
+                  href="/exhibition"
                   className="px-8 py-4 bg-white text-black font-mono text-[11px] uppercase tracking-[0.25em] hover:bg-primary hover:text-white transition-all text-center"
                 >
-                  Buy Pass
+                  Buy Tickets
                 </Link>
                 <Link
                   href="/experience"
