@@ -1,20 +1,26 @@
+import Image, { StaticImageData } from "next/image";
+
 interface PageHeroProps {
   eyebrow: string;
   title: React.ReactNode;
   subtitle?: string;
-  image?: string;
+  image?: string | StaticImageData;
 }
 
 export function PageHero({ eyebrow, title, subtitle, image }: PageHeroProps) {
   return (
     <section className="relative pt-40 pb-20 md:pt-52 md:pb-28 overflow-hidden">
       {image && (
-        <>
-          <div className="absolute inset-0 -z-10">
-            <img src={image} alt="" className="w-full h-full object-cover opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" />
-          </div>
-        </>
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src={image}
+            alt=""
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" />
+        </div>
       )}
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary mb-8 animate-reveal">

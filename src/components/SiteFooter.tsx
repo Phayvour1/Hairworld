@@ -1,13 +1,15 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 
 const navGroups = [
   {
     title: "Navigate",
     links: [
-      { to: "/", label: "Home" },
-      { to: "/experience", label: "Experience" },
-      { to: "/exhibition", label: "Exhibition" },
-      { to: "/gallery", label: "Gallery" },
+      { href: "/", label: "Home" },
+      { href: "/experience", label: "Experience" },
+      { href: "/exhibition", label: "Exhibition" },
+      { href: "/gallery", label: "Gallery" },
     ],
   },
 ] as const;
@@ -67,7 +69,7 @@ export function SiteFooter() {
               <div key={g.title} className="flex flex-col gap-3">
                 <span className="text-primary">{g.title}</span>
                 {g.links.map((l) => (
-                  <Link key={l.to} to={l.to} className="hover:text-primary transition-colors">
+                  <Link key={l.href} href={l.href} className="hover:text-primary transition-colors">
                     {l.label}
                   </Link>
                 ))}
@@ -90,7 +92,7 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row justify-between gap-4 pt-8 border-t border-border font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           <span>© {new Date().getFullYear()} World Hair Expo</span>
           <span>Editorial Sculpture Edition</span>
-          <Link to="/gallery" className="hover:text-primary">Press · Inquiries</Link>
+          <Link href="/gallery" className="hover:text-primary">Press · Inquiries</Link>
         </div>
       </div>
     </footer>
