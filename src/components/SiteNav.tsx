@@ -7,9 +7,13 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/experience", label: "Experience" },
   { href: "/exhibition", label: "Exhibition" },
+  { href: "/events", label: "Events" },
+  { href: "/venue", label: "Venue" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/contact", label: "Contact" },
   { href: "/register", label: "Register" },
 ] as const;
 
@@ -38,7 +42,7 @@ export function SiteNav() {
         <Link href="/" className="font-display text-2xl md:text-3xl tracking-tight uppercase">
           World <span className="font-serif-italic lowercase">Hair</span> Expo
         </Link>
-        <div className="hidden lg:flex items-center gap-8 font-mono text-[10px] uppercase tracking-[0.25em]">
+        <div className="hidden lg:flex items-center gap-6 font-mono text-[10px] uppercase tracking-[0.25em]">
           {links.map((l) => (
             <Link
               key={l.href}
